@@ -1,0 +1,64 @@
+@include breakpoint(small-mobile) {
+}
+@include breakpoint(tablet) {
+}
+@include breakpoint(laptop) {
+    .sidebar-section {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100%;
+        // height: 100%;
+        z-index: 1;
+        border-right: rgb(61, 61, 61) solid 1px;
+
+        .top-part {
+            width: 70px;
+            // padding-top: px;
+            &-burger {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 80px;
+                background-color: rgb(32, 31, 31);
+                &-img {
+                    height: 30px;
+                }
+            }
+            :hover {
+                background-color: rgb(26, 25, 25);
+            }
+        }
+        .bottom-part {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: baseline;
+            padding: 0 10px;
+            height: 300px;
+            &-container {
+                list-style: none;
+                transform: rotate(270deg);
+                height: 0;
+                // width: 50px;
+                // margin-left: 10px;
+                // margin-top: 30px;
+                // padding-top: 30px;
+                justify-content: center;
+
+                &-content {
+                    font-family: Montserrat-Semibold;
+                    font-size: 16px;
+                    color: $base-color;
+                }
+                :hover {
+                    color: turquoise;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}

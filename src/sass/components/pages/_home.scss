@@ -1,0 +1,17 @@
+@include breakpoint(small-mobile) {
+}
+@include breakpoint(tablet) {
+}
+@include breakpoint(laptop) {
+    .home-section {
+        &-img {
+            // height: 1000px;
+            height: 100%;
+            position: fixed;
+            // bottom: -160px;
+            bottom: 10%;
+            left: 20%;
+            z-index: -10;
+        }
+    }
+}

@@ -1,0 +1,24 @@
+@import "sass/abstracts/functions";
+@import "sass/abstracts/mixins";
+@import "sass/abstracts/variables";
+
+@import "sass/base/base";
+@import "sass/base/typography";
+@import "sass/base/utilities";
+
+// LAYOUTS
+@import "sass/components/layouts/header";
+@import "sass/components/layouts/footer";
+@import "sass/components/layouts/sidebar";
+
+// PAGES
+@import "sass/components/pages/dev";
+@import "sass/components/pages/exhibition";
+@import "sass/components/pages/home";
+@import "sass/components/pages/industrial";
+
+// BANNERS
+@import "sass/components/banners/home-banner";
+
+// MODULES
+@import "sass/components/modules/home-body";

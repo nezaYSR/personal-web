@@ -1,0 +1,42 @@
+#fullpage {
+    position: relative;
+    overflow: hidden;
+}
+#indicator {
+    position: absolute;
+    top: 0px;
+    left: 5vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    @include breakpoint(mobile) {
+        left: 1vw;
+    }
+}
+
+#indicator > div {
+    background-color: #5c5c5c;
+    width: 7px;
+    height: 7px;
+    border-radius: 5px;
+    margin: 3px;
+    cursor: pointer;
+    transition: all 0.2s;
+    @include breakpoint(mobile) {
+        width: 2px;
+    }
+}
+
+#indicator > div.active {
+    background-color: #fff;
+    height: 25px;
+}
+
+.section {
+    box-sizing: border-box;
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}

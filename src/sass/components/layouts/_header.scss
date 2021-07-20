@@ -1,0 +1,56 @@
+@include breakpoint(small-mobile) {
+    .header-section {
+        display: none;
+    }
+}
+@include breakpoint(tablet) {
+}
+@include breakpoint(laptop) {
+    .header-section {
+        width: 100%;
+        height: auto;
+        padding: 35px;
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        .header-title {
+            padding-left: 80px;
+            &-txt {
+                font-family: Montserrat-Bold;
+                color: $base-color;
+                font-size: 18px;
+            }
+            :hover {
+                text-decoration: none;
+                color: turquoise;
+            }
+        }
+        .header-container {
+            display: flex;
+            flex-direction: row;
+            &-title {
+                font-family: Roboto-Semibold;
+                font-size: 16px;
+                list-style: none;
+                margin-right: 30px;
+                &-btn {
+                    background-color: transparent;
+                    border: none;
+
+                    &-txt {
+                        color: $base-color;
+                    }
+                    &-img {
+                        height: 20px;
+                        margin-top: -2px;
+                        margin-left: 15px;
+                    }
+                    :hover {
+                        color: turquoise;
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+    }
+}
