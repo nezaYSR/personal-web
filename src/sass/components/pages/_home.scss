@@ -2,7 +2,7 @@
 }
 @include breakpoint(tablet) {
 }
-@include breakpoint(laptop) {
+@include breakpoint(laptops) {
     .home-section {
         &-img {
             // height: 1000px;

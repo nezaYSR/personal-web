@@ -5,7 +5,7 @@
 }
 @include breakpoint(tablet) {
 }
-@include breakpoint(laptop) {
+@include breakpoint(laptops) {
     .header-section {
         width: 100%;
         height: auto;

@@ -2,7 +2,7 @@
 }
 @include breakpoint(tablet) {
 }
-@include breakpoint(laptop) {
+@include breakpoint(laptops) {
     .sidebar-section {
         display: flex;
         flex-direction: column;

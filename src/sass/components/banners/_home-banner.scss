@@ -2,7 +2,7 @@
 }
 @include breakpoint(tablet) {
 }
-@include breakpoint(laptop) {
+@include breakpoint(laptops) {
     .home-banner-section {
         .home-banner {
             color: grey;

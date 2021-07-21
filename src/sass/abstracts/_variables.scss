@@ -11,44 +11,45 @@ $media-query: (
         )
     ),
     (
-        wide,
-        (
-            min-width: 1441px,
-        )
-    ),
-    (
-        laptop,
+        Desktops,
         (
                 min-width: 1024px,
             )
             // and
         // (
-        //     max-width: 1199px,
+        //     max-width: 1200px,
+        // )
+    ),
+    (
+        laptops,
+        (
+                min-width: 768px,
+            )
+            // and
+        // (
+        //     max-width: 1366px,
         // )
     ),
     (
         tablet,
         (
-                min-width: 768px,
+                min-width: 480px,
             )
-            and
-            (
-                max-width: 991px,
-            )
+            // and
+        // (
+        //     max-width: 1024px,
+        // )
     ),
     (
         mobile,
         (
-            max-width: 767px,
-        )
-    ),
-    (
-        small-mobile,
-        (
-            max-width: 360px,
-        )
+                min-width: 300px,
+            )
+            // and
+        // (
+        //     max-width: 768px,
+        // )
     );
-
 @font-face {
     font-family: Roboto-Bold;
     src: url("../../assets/font/RobotoMono-Bold.ttf");
