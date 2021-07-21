@@ -1,4 +1,30 @@
-@include breakpoint(small-mobile) {
+@include breakpoint(mobile) {
+    .home-body-section {
+        display: flex;
+        justify-content: center;
+        margin-top: 30px;
+        margin-bottom: 50px;
+        height: auto;
+        text-align: center;
+        .home-body-article {
+            display: flex;
+            flex-direction: column;
+            &-title {
+                font-family: Roboto-Semibold;
+                font-size: 20px;
+                width: 230px;
+                color: $base-color;
+                margin-bottom: -10px;
+            }
+            &-txt {
+                margin-top: 30px;
+                font-family: Montserrat-Regular;
+                font-size: 14px;
+                width: 230px;
+                color: $base-color;
+            }
+        }
+    }
 }
 @include breakpoint(tablet) {
 }
@@ -12,20 +38,21 @@
         .home-body-article {
             display: flex;
             flex-direction: column;
-            height: 50px;
-            margin-right: 50px;
+            // height: 50px;
+            // margin-right: 200px;
+            margin-right: 10%;
             &-title {
                 font-family: Roboto-Semibold;
-                font-size: 16px;
-                width: 220px;
+                font-size: 20px;
+                width: 230px;
                 color: $base-color;
                 margin-bottom: -10px;
             }
             &-txt {
                 margin-top: 30px;
                 font-family: Montserrat-Regular;
-                font-size: 12px;
-                width: 200px;
+                font-size: 14px;
+                width: 250px;
                 color: $base-color;
             }
         }

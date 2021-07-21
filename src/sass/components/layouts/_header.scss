@@ -1,6 +1,11 @@
-@include breakpoint(small-mobile) {
+@include breakpoint(mobile) {
     .header-section {
-        display: none;
+        .header-title {
+            display: none;
+        }
+        .header-container {
+            display: none;
+        }
     }
 }
 @include breakpoint(tablet) {

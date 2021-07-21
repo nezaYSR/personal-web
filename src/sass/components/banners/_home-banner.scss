@@ -1,4 +1,108 @@
-@include breakpoint(small-mobile) {
+@include breakpoint(mobile) {
+    .home-banner-section {
+        display: flex;
+        justify-content: center;
+        .home-banner {
+            color: grey;
+            width: 90%;
+            margin: 0;
+            height: 100%;
+            &-content {
+                height: 70%;
+                width: 100%;
+                padding: 20px;
+                border-radius: 20px;
+                backdrop-filter: blur(18px);
+                background-color: rgba(34, 38, 39, 0.075);
+                border: 2px rgba(255, 255, 255, 0.4) solid;
+                border-bottom: 2px rgba(40, 40, 40, 0.35) solid;
+                border-right: 2px rgba(40, 40, 40, 0.35) solid;
+                display: flex;
+                flex-direction: column;
+            }
+
+            .swiper-slide-active {
+                color: $base-color;
+                font-size: 30px;
+                // height: 100%;
+                // width: 100%;
+                .home-banner-content-img {
+                    filter: none;
+                }
+                .home-banner-content-txt {
+                    display: flex;
+                    flex-direction: column;
+                    &-slug {
+                        margin-bottom: 5px;
+                        margin-top: 5px;
+                        display: flex;
+                        &-link {
+                            margin-right: 5px;
+                            color: rgb(111, 111, 228);
+                        }
+                        &-prog {
+                            margin-left: 5px;
+                            color: $base-color;
+                        }
+                    }
+                    &-readmore {
+                        a {
+                            color: rgb(129, 173, 255);
+                        }
+                    }
+                }
+            }
+            .home-banner-content {
+                display: flex;
+                height: 580px;
+                &-img {
+                    height: 250px;
+                    // width: 200px;
+                    object-fit: cover;
+                    margin-bottom: 15px;
+                    border-radius: 10px;
+                    filter: grayscale(100%) blur(3px);
+                }
+                &-txt {
+                    &-title {
+                        font-family: Roboto-Semibold;
+                        font-size: 14px;
+                    }
+                    &-slug {
+                        font-family: Montserrat-Medium;
+                        font-size: 12px;
+
+                        &-link {
+                            width: 125px;
+                            white-space: nowrap;
+                            overflow: hidden;
+                            text-overflow: ellipsis;
+                            color: grey;
+                        }
+                    }
+                    &-desc {
+                        font-family: Montserrat-Regular;
+                        font-size: 12px;
+                        overflow: hidden;
+                        width: 80%;
+                        text-overflow: ellipsis;
+                        display: -webkit-box;
+                        -webkit-line-clamp: 9;
+                        -webkit-box-orient: vertical;
+                    }
+                    &-readmore {
+                        font-family: Montserrat-Regular;
+                        font-size: 14px;
+                        position: fixed;
+                        bottom: 0;
+                        a {
+                            color: grey;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 @include breakpoint(tablet) {
 }
@@ -28,9 +132,26 @@
                 .home-banner-content-img {
                     filter: none;
                 }
-                .home-banner-content-txt-readmore {
-                    a {
-                        color: rgb(129, 173, 255);
+                .home-banner-content-txt {
+                    display: flex;
+                    flex-direction: column;
+                    &-slug {
+                        margin-bottom: 5px;
+                        margin-top: 5px;
+                        display: flex;
+                        &-link {
+                            margin-right: 5px;
+                            color: rgb(111, 111, 228);
+                        }
+                        &-prog {
+                            margin-left: 5px;
+                            color: $base-color;
+                        }
+                    }
+                    &-readmore {
+                        a {
+                            color: rgb(129, 173, 255);
+                        }
                     }
                 }
             }
@@ -50,8 +171,16 @@
                         font-size: 14px;
                     }
                     &-slug {
+                        display: flex;
                         font-family: Montserrat-Medium;
                         font-size: 12px;
+                        &-link {
+                            width: 120px;
+                            white-space: nowrap;
+                            overflow: hidden;
+                            text-overflow: ellipsis;
+                            color: grey;
+                        }
                     }
                     &-desc {
                         font-family: Montserrat-Regular;
@@ -59,7 +188,7 @@
                         overflow: hidden;
                         text-overflow: ellipsis;
                         display: -webkit-box;
-                        -webkit-line-clamp: 9;
+                        -webkit-line-clamp: 7;
                         -webkit-box-orient: vertical;
                     }
                     &-readmore {

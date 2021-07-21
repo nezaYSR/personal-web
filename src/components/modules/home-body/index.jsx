@@ -16,11 +16,13 @@ const HomeBody = () => {
       <div className="home-body-section">
         <div className="home-body-article">
           <h1 className="home-body-article-title">
-            I read the news today, oh boy
+            Hi Neza here, thanks for coming
           </h1>
           <p className="home-body-article-txt">
-            Introducing my work collection, hopefully my invention serve a
-            purpose for the better
+            Introducing my work collection, aside of my current job as a
+            programmer i've experienced of mass production stuff, interior
+            design, exhibition. <br />I enjoy logical process and i love design
+            and art
           </p>
         </div>
       </div>

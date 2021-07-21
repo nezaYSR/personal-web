@@ -1,17 +1,41 @@
-@include breakpoint(small-mobile) {
+@include breakpoint(mobile) {
+    .home-section {
+        &-img {
+            display: none;
+        }
+    }
 }
 @include breakpoint(tablet) {
 }
 @include breakpoint(laptops) {
     .home-section {
         &-img {
-            // height: 1000px;
             height: 100%;
+            // width: 60%;
             position: fixed;
-            // bottom: -160px;
-            bottom: 10%;
+            // bottom: 10%;
+            top: 5%;
             left: 20%;
             z-index: -10;
+        }
+        &-mobileImg {
+            display: none;
+        }
+    }
+}
+@include breakpoint(Desktops) {
+    .home-section {
+        &-img {
+            height: 100%;
+            // width: 60%;
+            position: fixed;
+            // bottom: 10%;
+            top: -5%;
+            left: 20%;
+            z-index: -10;
+        }
+        &-mobileImg {
+            display: none;
         }
     }
 }

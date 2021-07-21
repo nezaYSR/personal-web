@@ -1,4 +1,29 @@
-@include breakpoint(small-mobile) {
+@include breakpoint(mobile) {
+    .footer-section {
+        // background-color: black;
+        position: relative;
+        bottom: 0;
+        margin-top: 100px;
+        width: 95%;
+        text-align: end;
+
+        .footer-list {
+            &-content {
+                padding: 5px 0;
+                &-txt {
+                    font-family: Montserrat-Regular;
+                    font-size: 12px;
+                    color: $base-color;
+                }
+            }
+        }
+        .footer-txt-1 {
+            font-family: Montserrat-Regular;
+            padding-top: 10px;
+            font-size: 10px;
+            color: $base-color;
+        }
+    }
 }
 @include breakpoint(tablet) {
 }
@@ -7,15 +32,17 @@
         // background-color: black;
         position: relative;
         bottom: 0;
-        margin-top: 60px;
+        margin-top: 100px;
         width: 95%;
         text-align: end;
 
         .footer-list {
             &-content {
-                font-family: Montserrat-Regular;
-                font-size: 12px;
-                color: $base-color;
+                &-txt {
+                    font-family: Montserrat-Regular;
+                    font-size: 12px;
+                    color: $base-color;
+                }
             }
         }
         .footer-txt-1 {

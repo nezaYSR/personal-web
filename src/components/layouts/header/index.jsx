@@ -1,11 +1,15 @@
+/* eslint-disable jsx-a11y/anchor-has-content */
 /* eslint-disable jsx-a11y/alt-text */
 /* eslint-disable jsx-a11y/anchor-is-valid */
 /* eslint-disable no-unused-vars */
 import React, { useState, Fragment } from "react";
 import { withRouter, Link } from "react-router-dom";
 
-// IMAGES
-import searchLogo from "../../../assets/icon/magnifying-glass-01.png";
+// ICONS
+import { GoSearch } from "react-icons/go";
+
+// COMPONENTS
+import BurgerMenu from "./burger-menu";
 
 const Header = () => {
   return (
@@ -45,14 +49,18 @@ const Header = () => {
           </li>
           <li className="header-container-title">
             <button className="header-container-title-btn">
-              <img
-                className="header-container-title-btn-img"
-                src={searchLogo}
-                alt="search-logo"
-              />
+              <a className="header-container-title-btn-txt" href="">
+                About Me
+              </a>
+            </button>
+          </li>
+          <li className="header-container-title">
+            <button className="header-container-title-btn">
+              <GoSearch color="white" size="25px" />
             </button>
           </li>
         </ul>
+        <BurgerMenu />
       </div>
     </Fragment>
   );

@@ -1,0 +1,71 @@
+@include breakpoint(mobile) {
+    .hamburger {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        padding: 30px;
+        &-burger {
+            display: flex;
+            align-self: flex-end;
+        }
+        &-close {
+            display: flex;
+            align-self: flex-end;
+            z-index: 4;
+            position: fixed;
+            top: 30px;
+        }
+        &-container {
+            background: rgba(17, 3, 3, 0.5);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            // border: 1px solid rgba(255, 255, 255, 0.18);
+
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            z-index: 2;
+            padding: 60px 30px;
+            &-content {
+                &-title {
+                    font-family: Roboto-Bold;
+                    list-style: none;
+                    padding-top: 30px;
+                    &-btn {
+                        background-color: transparent;
+                        border: none;
+                        &-txt {
+                            position: fixed;
+                            color: $base-color;
+                        }
+                    }
+                }
+            }
+            &-socmed {
+                text-align: center;
+                margin-top: 100px;
+                &-txt {
+                    font-family: Roboto-Bold;
+                    color: $base-color;
+                }
+                &-container {
+                    display: flex;
+                    justify-content: center;
+                    &-content {
+                        list-style: none;
+                        margin: 10px 10px;
+                    }
+                }
+            }
+        }
+    }
+}
+@include breakpoint(tablet) {
+}
+@include breakpoint(laptops) {
+    .hamburger {
+        display: none;
+    }
+}

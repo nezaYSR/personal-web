@@ -13,7 +13,7 @@ $media-query: (
     (
         Desktops,
         (
-                min-width: 1024px,
+                min-width: 1366px,
             )
             // and
         // (
@@ -23,32 +23,31 @@ $media-query: (
     (
         laptops,
         (
-                min-width: 768px,
+                min-width: 1224px,
             )
-            // and
-        // (
-        //     max-width: 1366px,
+            // and (
+        //     max-width: 480px,
         // )
     ),
     (
         tablet,
         (
-                min-width: 480px,
+                min-width: 768px,
             )
-            // and
-        // (
-        //     max-width: 1024px,
-        // )
+            and
+            (
+                max-width: 1024px,
+            )
     ),
     (
         mobile,
         (
-                min-width: 300px,
+                min-width: 320px,
             )
-            // and
-        // (
-        //     max-width: 768px,
-        // )
+            and
+            (
+                max-width: 480px,
+            )
     );
 @font-face {
     font-family: Roboto-Bold;

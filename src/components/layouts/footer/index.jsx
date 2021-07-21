@@ -10,23 +10,23 @@ const Footer = () => {
       <div className="footer-section">
         <div className="footer-list-container">
           <ul className="footer-list">
-            <li>
-              <a href="" className="footer-list-content">
+            <li className="footer-list-content">
+              <a href="" className="footer-list-content-txt">
                 Store
               </a>
             </li>
-            <li>
-              <a href="" className="footer-list-content">
+            <li className="footer-list-content">
+              <a href="" className="footer-list-content-txt">
                 Cookies
               </a>
             </li>
-            <li>
-              <a href="" className="footer-list-content">
+            <li className="footer-list-content">
+              <a href="" className="footer-list-content-txt">
                 Privacy Policy
               </a>
             </li>
-            <li>
-              <a href="" className="footer-list-content">
+            <li className="footer-list-content">
+              <a href="" className="footer-list-content-txt">
                 Contact
               </a>
             </li>
