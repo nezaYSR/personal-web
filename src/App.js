@@ -18,6 +18,8 @@ import Home from "./components/pages/home";
 import Dev from "./components/pages/dev";
 import Industrial from "./components/pages/industrial";
 import Exhibition from "./components/pages/exhibition";
+import AboutMe from "./components/pages/aboutme";
+import WildCard from "./components/pages/wild-card";
 
 function App() {
   return (
@@ -28,6 +30,7 @@ function App() {
       <Route exact path="/dev" component={Dev} />
       <Route exact path="/industrial" component={Industrial} />
       <Route exact path="/exhibition" component={Exhibition} />
+      <Route exact path="/aboutme" component={AboutMe} />
       <Footer />
     </Router>
   );

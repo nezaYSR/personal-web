@@ -44,7 +44,7 @@ const BurgerMenu = () => {
               <button className="hamburger-container-content-title-btn">
                 <a
                   className="hamburger-container-content-title-btn-txt"
-                  href=""
+                  href="/blog"
                 >
                   Blog
                 </a>
@@ -54,7 +54,7 @@ const BurgerMenu = () => {
               <button className="hamburger-container-content-title-btn">
                 <a
                   className="hamburger-container-content-title-btn-txt"
-                  href=""
+                  href="/dev"
                 >
                   Dev
                 </a>
@@ -64,7 +64,7 @@ const BurgerMenu = () => {
               <button className="hamburger-container-content-title-btn">
                 <a
                   className="hamburger-container-content-title-btn-txt"
-                  href=""
+                  href="/industrial"
                 >
                   Industrial
                 </a>
@@ -74,7 +74,7 @@ const BurgerMenu = () => {
               <button className="hamburger-container-content-title-btn">
                 <a
                   className="hamburger-container-content-title-btn-txt"
-                  href=""
+                  href="/exhibition"
                 >
                   Exhibition
                 </a>
@@ -84,7 +84,7 @@ const BurgerMenu = () => {
               <button className="hamburger-container-content-title-btn">
                 <a
                   className="hamburger-container-content-title-btn-txt"
-                  href=""
+                  href="/aboutme"
                 >
                   About Me
                 </a>
@@ -104,7 +104,7 @@ const BurgerMenu = () => {
               </li>
 
               <li className="hamburger-container-socmed-container-content">
-                <a href="">
+                <a href="https://www.linkedin.com/in/nezayasser/">
                   <TiSocialLinkedin color="white" size="30px" />
                 </a>
               </li>

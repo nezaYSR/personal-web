@@ -21,42 +21,37 @@ const Header = () => {
         <ul className="header-container">
           <li className="header-container-title">
             <button className="header-container-title-btn">
-              <a className="header-container-title-btn-txt" href="">
+              <a className="header-container-title-btn-txt" href="/blog">
                 Blog
               </a>
             </button>
           </li>
           <li className="header-container-title">
             <button className="header-container-title-btn">
-              <a className="header-container-title-btn-txt" href="">
+              <a className="header-container-title-btn-txt" href="/dev">
                 Dev
               </a>
             </button>
           </li>
           <li className="header-container-title">
             <button className="header-container-title-btn">
-              <a className="header-container-title-btn-txt" href="">
+              <a className="header-container-title-btn-txt" href="/industrial">
                 Industrial
               </a>
             </button>
           </li>
           <li className="header-container-title">
             <button className="header-container-title-btn">
-              <a className="header-container-title-btn-txt" href="">
+              <a className="header-container-title-btn-txt" href="/exhibition">
                 Exhibition
               </a>
             </button>
           </li>
           <li className="header-container-title">
             <button className="header-container-title-btn">
-              <a className="header-container-title-btn-txt" href="">
+              <a className="header-container-title-btn-txt" href="/aboutme">
                 About Me
               </a>
-            </button>
-          </li>
-          <li className="header-container-title">
-            <button className="header-container-title-btn">
-              <GoSearch color="white" size="25px" />
             </button>
           </li>
         </ul>

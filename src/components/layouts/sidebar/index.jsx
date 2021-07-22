@@ -11,7 +11,7 @@ const Sidebar = () => {
     <Fragment>
       <div className="sidebar-section">
         <div className="top-part">
-          <a href="" className="top-part-burger">
+          <a href="/" className="top-part-burger">
             <img
               src={burgerLogo}
               className="top-part-burger-img"
@@ -21,7 +21,10 @@ const Sidebar = () => {
         </div>
         <ul className="bottom-part">
           <li className="bottom-part-container">
-            <a href="" className="bottom-part-container-content">
+            <a
+              href="https://www.linkedin.com/in/nezayasser/"
+              className="bottom-part-container-content"
+            >
               In
             </a>
           </li>
