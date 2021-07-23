@@ -11,17 +11,16 @@ import "react-tabs/style/react-tabs.css";
 const AboutMeTabs = () => {
   return (
     <Fragment>
-      <h1>Tabs here</h1>
-      <Tabs>
-        <TabList>
-          <Tab>Title 1</Tab>
-          <Tab>Title 2</Tab>
+      <Tabs className="about-me-tab">
+        <TabList className="about-me-tab-title">
+          <Tab className="about-me-tab-title-txt">Skill</Tab>
+          <Tab className="about-me-tab-title-txt">Interest</Tab>
         </TabList>
 
-        <TabPanel>
+        <TabPanel className="about-me-tab-content">
           <h2>Any content 1</h2>
         </TabPanel>
-        <TabPanel>
+        <TabPanel className="about-me-tab-content">
           <h2>Any content 2</h2>
         </TabPanel>
       </Tabs>

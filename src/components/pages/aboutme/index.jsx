@@ -10,8 +10,10 @@ import AboutMeTabs from "../../modules/about-me-tabs";
 const AboutMe = () => {
   return (
     <Fragment>
-      <h1>about me</h1>
-      <AboutMeTabs />
+      <div className="about-me-section">
+        <h1>about me</h1>
+        <AboutMeTabs />
+      </div>
     </Fragment>
   );
 };

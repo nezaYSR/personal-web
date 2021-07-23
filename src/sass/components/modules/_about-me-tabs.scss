@@ -3,4 +3,21 @@
 @include breakpoint(tablet) {
 }
 @include breakpoint(laptops) {
+    .about-me-tab {
+        align-self: center;
+        .react-tabs__tab--selected {
+            background: transparent;
+            border-bottom: solid 5px black;
+        }
+        &-title {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            font-family: Roboto-Semibold;
+            font-size: 30px;
+            &-txt {
+                margin-left: 50px;
+            }
+        }
+    }
 }

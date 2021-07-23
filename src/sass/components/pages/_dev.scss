@@ -3,4 +3,21 @@
 @include breakpoint(tablet) {
 }
 @include breakpoint(laptops) {
+    .dev-section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        &-title {
+            font-family: Roboto-Semibold;
+            font-size: 40px;
+            color: $base-color;
+            margin-top: 100px;
+        }
+
+        &-err {
+            height: 800px;
+            object-fit: contain;
+        }
+    }
 }

@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-no-target-blank */
 /* eslint-disable jsx-a11y/anchor-is-valid */
 /* eslint-disable no-unused-vars */
 import React, { useState, Fragment } from "react";
@@ -22,19 +23,37 @@ const Sidebar = () => {
         <ul className="bottom-part">
           <li className="bottom-part-container">
             <a
+              href="https://github.com/nezaYSR"
+              className="bottom-part-container-content"
+              target="_blank"
+            >
+              Git
+            </a>
+          </li>
+          <li className="bottom-part-container">
+            <a
               href="https://www.linkedin.com/in/nezayasser/"
               className="bottom-part-container-content"
+              target="_blank"
             >
               In
             </a>
           </li>
           <li className="bottom-part-container">
-            <a href="" className="bottom-part-container-content">
+            <a
+              href=""
+              className="bottom-part-container-content"
+              target="_blank"
+            >
               Ig
             </a>
           </li>
           <li className="bottom-part-container">
-            <a href="" className="bottom-part-container-content">
+            <a
+              href=""
+              className="bottom-part-container-content"
+              target="_blank"
+            >
               Tw
             </a>
           </li>
