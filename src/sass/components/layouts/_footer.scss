@@ -30,7 +30,7 @@
 @include breakpoint(laptops) {
     .footer-section {
         // background-color: black;
-        position: relative;
+        position: fixed;
         bottom: 0;
         margin-top: 100px;
         width: 95%;
@@ -38,6 +38,7 @@
 
         .footer-list {
             &-content {
+                list-style: none;
                 &-txt {
                     font-family: Montserrat-Regular;
                     font-size: 12px;
