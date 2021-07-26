@@ -4,8 +4,9 @@
 }
 @include breakpoint(laptops) {
   .about-me-tab {
-    align-self: center;
-    .react-tabs__tab--selected {
+      justify-content: center;
+      align-self: center;
+      .react-tabs__tab--selected {
       background: transparent;
       border-bottom: solid 5px $base-color;
     }

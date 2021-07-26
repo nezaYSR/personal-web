@@ -93,7 +93,7 @@ const AboutMeTabs = () => {
           <button className="about-me-tab-title-txt-btn">Skill</button>
           </Tab>
           <Tab className="about-me-tab-title-txt">
-          <button className="about-me-tab-title-txt-btn">Interest</button>
+          <button className="about-me-tab-title-txt-btn">Biography</button>
           </Tab>
         </TabList>
 

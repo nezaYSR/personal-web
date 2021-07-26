@@ -11,7 +11,19 @@ import { withRouter, Link, Route } from "react-router-dom";
 import { Canvas, useFrame } from "@react-three/fiber";
 import { Swiper, SwiperSlide } from "swiper/react";
 
-import "swiper/swiper.scss";
+// import "swiper/swiper.scss";
+
+// Import Swiper styles
+import "swiper/swiper.min.css";
+import "swiper/components/pagination/pagination.min.css";
+
+// import "./styles.css";
+
+// import Swiper core and required modules
+import SwiperCore, { Pagination } from "swiper/core";
+
+// install Swiper modules
+SwiperCore.use([Pagination]);
 
 // IMAGES
 
@@ -83,6 +95,9 @@ const HomeBanner = () => {
         slidesPerView={2}
         spaceBetween={25}
         centeredSlides={true}
+        pagination={{
+          dynamicBullets: true,clickable: true ,currentClass:'pagination-bullet'
+        }}
         breakpoints={{
           // when window width is >= 320px
           300: {

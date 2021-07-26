@@ -2,11 +2,19 @@
     .home-banner-section {
         display: flex;
         justify-content: center;
+
+
+        .swiper-container-horizontal>.swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction{
+            bottom: 0px !important;
+        }
         .home-banner {
             color: grey;
             width: 90%;
             margin: 0;
-            height: 100%;
+            // height: 100%;
+
+            padding-bottom: 30px;
+            margin-bottom: 30px;
             &-content {
                 height: 70%;
                 width: 100%;
@@ -19,6 +27,10 @@
                 border-right: 2px rgba(40, 40, 40, 0.35) solid;
                 display: flex;
                 flex-direction: column;
+            }
+            .swiper-pagination{
+                position: absolute;
+                bottom: -50px;
             }
 
             .swiper-slide-active {
@@ -120,6 +132,8 @@
             color: grey;
             width: 80%;
             height: 100%;
+            padding-bottom: 50px;
+            margin-bottom: 50px;
             &-content {
                 height: 70%;
                 width: 70%;
