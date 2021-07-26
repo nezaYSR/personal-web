@@ -24,6 +24,7 @@
                 font-family: Montserrat-Bold;
                 color: $base-color;
                 font-size: 18px;
+                
             }
             :hover {
                 text-decoration: none;
@@ -44,6 +45,7 @@
 
                     &-txt {
                         color: $base-color;
+                        text-decoration: none;
                     }
                     &-img {
                         height: 20px;

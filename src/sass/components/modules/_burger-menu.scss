@@ -4,6 +4,7 @@
         flex-direction: column;
         justify-content: flex-end;
         padding: 30px;
+        height: 100%;
         &-burger {
             display: flex;
             align-self: flex-end;
@@ -39,6 +40,7 @@
                         &-txt {
                             position: fixed;
                             color: $base-color;
+                            text-decoration: none;
                         }
                     }
                 }

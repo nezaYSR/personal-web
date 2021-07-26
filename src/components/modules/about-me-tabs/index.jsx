@@ -81,7 +81,7 @@ const AboutMeTabs = () => {
   const hm = (props) => (
     <Tooltip id="button-tooltip" {...props}>
       Clay sculpting, Resin, Fiberglass Prototyping, Woodworking, Scale model,
-      Painting, Leather Crafting
+      Painting, Leather Crafting, Model kit, Diorama
     </Tooltip>
   );
 
@@ -89,8 +89,12 @@ const AboutMeTabs = () => {
     <Fragment>
       <Tabs className="about-me-tab">
         <TabList className="about-me-tab-title">
-          <Tab className="about-me-tab-title-txt">Skill</Tab>
-          <Tab className="about-me-tab-title-txt">Interest</Tab>
+          <Tab className="about-me-tab-title-txt">
+          <button className="about-me-tab-title-txt-btn">Skill</button>
+          </Tab>
+          <Tab className="about-me-tab-title-txt">
+          <button className="about-me-tab-title-txt-btn">Interest</button>
+          </Tab>
         </TabList>
 
         <TabPanel className="about-me-tab-content">
@@ -98,74 +102,74 @@ const AboutMeTabs = () => {
             <ProgressBar className="about-me-tab-content-container-bar">
               <ProgressBar
                 animated
-                variant="success"
+                variant="secondary "
                 now={50}
                 key={1}
                 label={`Design`}
               />
-              <ProgressBar variant="warning" now={15} key={2} label={`other`} />
+              <ProgressBar variant="dark" now={15} key={2} label={`other`} />
               <ProgressBar
                 animated
-                variant="danger"
+                variant="secondary"
                 now={35}
                 key={3}
-                label={`Logic`}
+                label={`Programming`}
               />
             </ProgressBar>
             <div className="about-me-tab-content-container-desc">
               <ul className="creative">
-                <li className="logic-li">
+                <li className="creative-li">
                   <OverlayTrigger
                     placement="left"
                     delay={{ show: 50, hide: 200 }}
                     overlay={ed}
-                    className="logic-li-li"
+                    className="creative-li-li"
                   >
-                    <Button className="logic-li-li-btn">
-                      Vector & Editing
+                    <Button className="creative-li-li-btn">
+                      Graphic
                     </Button>
                   </OverlayTrigger>
                 </li>
 
-                <li className="logic-li">
+                <li className="creative-li">
                   <OverlayTrigger
                     placement="left"
                     delay={{ show: 50, hide: 200 }}
                     overlay={pt}
-                    className="logic-li-li"
+                    className="creative-li-li"
                   >
-                    <Button className="logic-li-li-btn">
-                      UI UX Prototyping
+                    <Button className="creative-li-li-btn">
+                      UI-UX
                     </Button>
                   </OverlayTrigger>
                 </li>
 
-                <li className="logic-li">
+                <li className="creative-li">
                   <OverlayTrigger
                     placement="left"
                     delay={{ show: 50, hide: 200 }}
                     overlay={td}
-                    className="logic-li-li"
+                    className="creative-li-li"
                   >
-                    <Button className="logic-li-li-btn">3D Modeling</Button>
+                    <Button className="creative-li-li-btn">3D Modeling</Button>
                   </OverlayTrigger>
                 </li>
 
-                <li className="logic-li">
+                <li className="creative-li">
                   <OverlayTrigger
                     placement="left"
                     delay={{ show: 50, hide: 200 }}
                     overlay={hm}
-                    className="logic-li-li"
+                    className="creative-li-li"
                   >
-                    <Button className="logic-li-li-btn">Handmade</Button>
+                    <Button className="creative-li-li-btn">Handmade</Button>
                   </OverlayTrigger>
                 </li>
 
-                <li className="logic-li">Autocad</li>
-                <li className="logic-li">Sketching</li>
-                <li className="logic-li">Manual Rendering</li>
+                <li className="creative-li">Autocad</li>
+                <li className="creative-li">Sketching</li>
               </ul>
+             
               <hr className="partition" />
 
               <ul className="logic">
@@ -176,7 +180,7 @@ const AboutMeTabs = () => {
                     overlay={js}
                     className="logic-li-li"
                   >
-                    <Button className="logic-li-li-btn">Javascript & TS</Button>
+                    <Button className="logic-li-li-btn">Javascript</Button>
                   </OverlayTrigger>
                 </li>
 

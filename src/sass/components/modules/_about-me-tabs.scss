@@ -3,130 +3,144 @@
 @include breakpoint(tablet) {
 }
 @include breakpoint(laptops) {
-    .about-me-tab {
-        align-self: center;
-        .react-tabs__tab--selected {
-            background: transparent;
-            border-bottom: solid 5px black;
-        }
-        &-title {
-            list-style: none;
-            display: flex;
-            justify-content: center;
-            font-family: Roboto-Semibold;
-            color: grey;
-            font-size: 30px;
-            &-txt {
-                margin-left: 30px;
-                margin-right: 30px;
-            }
-        }
-        &-content {
-            margin-top: 100px;
-            &-container {
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                &-bar {
-                    &:nth-child(1) {
-                        height: 30px;
-                        width: 600px;
-                    }
-                }
-                &-desc {
-                    display: flex;
-                    // justify-content: center;
-                    align-self: center;
-                    font-family: Roboto-Medium;
-                    color: $base-color;
-                    .creative {
-                        display: flex;
-                        flex-direction: column;
-                        justify-content: flex-start;
-                        list-style: none;
-                        align-items: flex-end;
-                        margin-top: 80px;
-                        &-li {
-                            margin-bottom: 10px;
-                            &-li {
-                                &-btn {
-                                    padding: 0;
-                                    background-color: transparent;
-                                    border: none;
-                                    text-align: start;
-                                }
-                                &-btn[aria-describedby="button-tooltip"] {
-                                    background-color: transparent;
-                                }
-                                &-btn:focus {
-                                    background-color: transparent;
-                                    border: none;
-                                    box-shadow: none;
-                                }
-                                &-btn:hover {
-                                    background-color: transparent;
-                                }
-                                .btn-primary:not(:disabled):not(.disabled).active,
-                                .btn-primary:not(:disabled):not(.disabled):active,
-                                .show > .btn-primary.dropdown-toggle {
-                                    background-color: transparent;
-                                }
-                                &-btn:focus-visible {
-                                    outline: none;
-                                }
-                            }
-                        }
-                    }
-                    .partition {
-                        transform: rotate(90deg);
-                        // height: 200px;
-                        width: 200px;
-                        border: solid 1px $base-color;
-                        // justify-content: center;
-                        // align-content: center;
-                        margin-top: 150px;
-
-                        align-items: center;
-                    }
-                    .logic {
-                        display: flex;
-                        flex-direction: column;
-                        justify-content: flex-start;
-                        list-style: none;
-                        margin-top: 80px;
-                        &-li {
-                            margin-bottom: 10px;
-                            &-li {
-                                &-btn {
-                                    padding: 0;
-                                    background-color: transparent;
-                                    border: none;
-                                    text-align: start;
-                                }
-                                &-btn[aria-describedby="button-tooltip"] {
-                                    background-color: transparent;
-                                }
-                                &-btn:focus {
-                                    background-color: transparent;
-                                    border: none;
-                                    box-shadow: none;
-                                }
-                                &-btn:hover {
-                                    background-color: transparent;
-                                }
-                                .btn-primary:not(:disabled):not(.disabled).active,
-                                .btn-primary:not(:disabled):not(.disabled):active,
-                                .show > .btn-primary.dropdown-toggle {
-                                    background-color: transparent;
-                                }
-                                &-btn:focus-visible {
-                                    outline: none;
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        }
+  .about-me-tab {
+    align-self: center;
+    .react-tabs__tab--selected {
+      background: transparent;
+      border-bottom: solid 5px $base-color;
     }
+    &-title {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      font-family: Roboto-Semibold;
+      font-size: 30px;
+      &-txt {
+        margin-left: 30px;
+        margin-right: 30px;
+        &-btn {
+          color: rgb(92, 91, 91);
+          background-color: transparent;
+          border: none;
+        }
+      }
+      .react-tabs__tab--selected {
+        :nth-child(1) {
+          color: $base-color;
+        }
+      }
+    }
+    &-content {
+      margin-top: 100px;
+      &-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        &-bar {
+          &:nth-child(1) {
+            height: 30px;
+            width: 600px;
+          }
+        }
+        &-desc {
+          display: flex;
+          // justify-content: center;
+          align-self: center;
+          font-family: Roboto-Medium;
+          color: $base-color;
+          .creative {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            list-style: none;
+            align-items: flex-end;
+            margin-top: 80px;
+            &-li {
+              margin-bottom: 10px;
+              text-align: end;
+              &-li {
+                &-btn {
+                  // width: 100%;
+                  padding: 0;
+                  background-color: transparent;
+                  border: none;
+                  text-align: end;
+                }
+                &-btn[aria-describedby="button-tooltip"] {
+                  background-color: transparent;
+                }
+                &-btn:focus {
+                  background-color: transparent;
+                  border: none;
+                  box-shadow: none;
+                }
+                &-btn:hover {
+                  background-color: transparent;
+                }
+                .btn-primary:not(:disabled):not(.disabled).active,
+                .btn-primary:not(:disabled):not(.disabled):active,
+                .show > .btn-primary.dropdown-toggle {
+                  background-color: transparent;
+                }
+                &-btn:focus-visible {
+                  outline: none;
+                }
+              }
+            }
+          }
+
+          .partition {
+            transform: rotate(90deg);
+            // height: 200px;
+            width: 250px;
+            border: solid 1px $base-color;
+            // justify-content: center;
+            // align-content: center;
+            margin-top: 200px;
+
+            align-items: center;
+          }
+
+          .logic {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            list-style: none;
+            margin-top: 80px;
+            &-li {
+              margin-bottom: 10px;
+              &-li {
+                &-btn {
+                  // width: 180px;
+                  padding: 0;
+                  background-color: transparent;
+                  border: none;
+                  text-align: start;
+                }
+                &-btn[aria-describedby="button-tooltip"] {
+                  background-color: transparent;
+                }
+                &-btn:focus {
+                  background-color: transparent;
+                  border: none;
+                  box-shadow: none;
+                }
+                &-btn:hover {
+                  background-color: transparent;
+                }
+                .btn-primary:not(:disabled):not(.disabled).active,
+                .btn-primary:not(:disabled):not(.disabled):active,
+                .show > .btn-primary.dropdown-toggle {
+                  background-color: transparent;
+                }
+                &-btn:focus-visible {
+                  outline: none;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 }

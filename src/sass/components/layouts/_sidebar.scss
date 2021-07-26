@@ -96,13 +96,10 @@
                 list-style: none;
                 transform: rotate(270deg);
                 height: 0;
-                // width: 50px;
-                // margin-left: 10px;
-                // margin-top: 30px;
-                // padding-top: 30px;
                 justify-content: center;
-
+                
                 &-content {
+                    text-decoration: none;
                     font-family: Montserrat-Semibold;
                     font-size: 16px;
                     color: $base-color;
